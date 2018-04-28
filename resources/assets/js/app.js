@@ -21,12 +21,14 @@ Vue.use(VueRouter)
 
 let Myheader = require('./components/Myheader.vue');
 let Myfooter = require('./components/Myfooter.vue');
-let Home = require('./components/Home.vue');
-let About = require('./components/About.vue');
+let Home = require('./components/home.vue');
+let About = require('./components/about.vue');
+let Modals = require('./components/modals.vue')
 
 const routes = [
 	{ path: '/home', component: Home },
-	{ path: '/about', component: About }
+	{ path: '/about', component: About },
+    { path: '/modals', components: Modals }
 ]
 
 const router = new VueRouter({
